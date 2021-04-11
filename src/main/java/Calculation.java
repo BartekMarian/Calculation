@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
-public class Calculation {
+class Calculation {
 
     public static BigInteger a;
     public static BigInteger b;
