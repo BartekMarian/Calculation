@@ -12,7 +12,8 @@ class Calculation {
     public static double d;
     public static BigInteger resultProgramA;
     public static double resultProgramB;
-    public static BigInteger resultOfDifference;
+    public static double r;
+    public static double resultOfDifference;
     public static Scanner input;
     public static final String GREEN = "\033[0;32m";
     public static final String ANSI_RESET = "\u001B[0m";
@@ -60,12 +61,13 @@ class Calculation {
         d = input.nextDouble();
 
         resultProgramB = c*d;
-        System.out.println("The result of second algorithm : " + resultProgramA);
+        System.out.println("The result of second algorithm : " + resultProgramB);
 
     }
     @Test
     public static void difference() {
-        resultOfDifference = resultProgramA.subtract(resultProgramA);
+        r=resultProgramA.doubleValue();
+        resultOfDifference = r-resultProgramB;
         System.out.println(GREEN+"The difference between two algorithms is :" + resultOfDifference);
         System.out.println(ANSI_RESET);
     }
